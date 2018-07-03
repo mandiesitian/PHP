@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <script language="JavaScript">
+        function check_num() {
+            if(LX.user_name.value==""||LX.user_name.value==""){
+                alert('请补充信息再登录');
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<form name="LX" method="post" action="LX1.php" onsubmit="return check_num()">
+    <table border="0" width="200px" align="center">
+        <tr>
+            <td>用户名：</td><td><input name="user_name" type="text"></td>
+        </tr>
+        <tr>
+            <td>密码：</td><td><input name="password" type="text"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="登录系统"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

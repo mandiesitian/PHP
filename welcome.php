@@ -7,8 +7,9 @@
 </head>
 <body>
 <?php
-echo "欢迎".$_POST["fname"]."!<br/>";
+session_start();
+
+echo "欢迎".$_SESSION['user'];
 echo "你的年龄是".$_POST["age"]."岁。";
 ?>
 </body>
-</html>
